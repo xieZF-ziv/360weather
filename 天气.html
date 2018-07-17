@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360天气</title>
+	<link rel="stylesheet" href="css/mycss.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="head">
+			<div class="head-left">
+				<a href="#"></a>
+			</div>
+			<div class="head-right">
+				<input type="text" class="head-search">
+				<button class="search-btn">搜索</button>
+				<p class="head-zi">收藏</p>
+			</div>
+		</div>
+
+		<div id="center">
+			<div class="cen-top">
+				<ul class="nav">
+					<li>
+						<a href="#">查看天气</a>
+					</li>
+					<li>
+						<a href="#">360天气介绍</a>
+					</li>
+					<li>
+						<a href="#">许可协议</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 中间 -->
+			<div class="main">
+				<div class="main-center">
+					<select name="" id="province">
+						<option value="">福建</option>
+					</select>
+					<select name="" id="city">
+						<option value="">厦门</option>
+					</select>
+					<select name="" id="town">
+						<option value="101230206">集美</option>
+						<option value="101230203">思明</option>
+					</select>
+					<input type="button" value="更换" class="citybtn">
+				</div>
+				<div class="wether">
+					<div class="wetherintro">
+						<div class="cityinfo">
+							<h4 class="wethercity">厦门</h4>
+							<p class="wethertime">19 : 26 发布</p>
+							<span class="wethericon youxiu" id="aqi">空气优 36</span>
+						</div>
+						<div class="wetherdetail">
+							<strong id="temperature">30°</strong>
+							<span id="weathertype">晴天</span>
+							<ul>
+		                        <li>
+		                        	<i class="icon-shi"></i>湿度 
+		                        	<span id="humidity">99</span>%
+		                        </li>
+		                        <li class="txt-r">
+		                        	<i class="icon-feng"></i>
+		                        	<span id="winddir">东南风</span>
+		                        	<span id="windpower">2级</span>
+		                        </li>
+		                    </ul>
+						</div>
+					</div>
+
+					<div class="wetherapp">
+		                <img src="images/1.png" class="app1">
+		                <p class="app2"></p>
+		                
+					</div>
+				</div>
+				<!-- 多个天气 -->
+				<div class="morewether">
+		            <ul id="foreast">
+		            	<li>
+		            		<p class="colora">周日 6月10日</p>
+		            		<p class="icon-tu">
+		            			<i class="zhongyu"></i>
+		            			<span>中雨</span>
+		            		</p>
+		            		<p class="otherinfo">
+		            			<span>25~28°</span>
+		            			<u>微风</u>
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p class="colora">周一 6月11日</p>
+		            		<p class="icon-tu">
+		            			<i class="duoyun"></i>
+		            			<span>中雨</span>
+		            		</p>
+		            		<p class="otherinfo">
+		            			<span>25~28°</span>
+		            			<u>微风</u>
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p class="colora">周二 6月12日</p>
+		            		<p class="icon-tu">
+		            			<i class="duoyun"></i>
+		            			<span>中雨</span>
+		            		</p>
+		            		<p class="otherinfo">
+		            			<span>25~28°</span>
+		            			<u>微风</u>
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p class="colora">周三 6月13日</p>
+		            		<p class="icon-tu">
+		            			<i class="duoyun"></i>
+		            			<span>中雨</span>
+		            		</p>
+		            		<p class="otherinfo">
+		            			<span>25~28°</span>
+		            			<u>微风</u>
+		            		</p>
+		            	</li>
+		            	<li>
+		            		<p class="colora">周四 6月14日</p>
+		            		<p class="icon-tu">
+		            			<i class="duoyun"></i>
+		            			<span>中雨</span>
+		            		</p>
+		            		<p class="otherinfo">
+		            			<span>25~28°</span>
+		            			<u>微风</u>
+		            		</p>
+		            	</li>
+		        	</ul>
+		        </div>
+			</div>
+		</div>
+		<div id="foot"></div>
+	</div>
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/myjs.js"></script>
+</body>
+</html>
